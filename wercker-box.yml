@@ -1,0 +1,12 @@
+name: python-pyodbc 
+version: 0.0.1
+inherits: wercker/python@1.1.0
+type: main 
+platform: ubuntu@12.04
+description: wercker box with pyodbc installed 
+keywords:
+  - python
+  - pyodbc
+script: |
+    sudo apt-get update -y
+    sudo apt-get install python-pyodbc -y
